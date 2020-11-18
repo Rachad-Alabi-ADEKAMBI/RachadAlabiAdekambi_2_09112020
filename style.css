@@ -1,20 +1,13 @@
-/* -------import fonts ------ */
-@font-face {
-  font-family: Raleway;
-  src: url("fonts/Raleway-VariableFont_wght.ttf");
-}
-
 /*html*/
 * {
   margin: 0;
   padding: 0;
-  font-family: Raleway, arial;
+  font-family: "Raleway, arial";
   box-sizing: border-box;
 }
 
 .container {
   height: 100%;
-  position: relative;
 }
 
 /*header*/
@@ -39,11 +32,12 @@ header img {
 
 .menu_login a {
   color: #0065fc;
+  font-weight: bold;
 }
 
 .menu_link a:hover {
   color: #0065fc;
-  border-bottom: 1.2px#0065fc solid;
+  border-bottom: 1.2px#DEEBFF solid;
 }
 
 ul li {
@@ -54,6 +48,7 @@ ul li {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 /*search section*/
@@ -84,6 +79,7 @@ p {
   margin: auto 10px;
 }
 
+/*form*/
 form {
   height: 50px;
   width: 400px;
@@ -105,8 +101,15 @@ form {
   margin: auto;
 }
 
-.search_form_text {
-  width: 160px;
+form input {
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
+  padding-left: 5px;
 }
 
 .search_form_submit {
@@ -122,6 +125,7 @@ form {
   border-radius: 0 15px 15px 0;
   background-color: #0065fc;
   display: none;
+  border: none;
 }
 
 .search_form_submit_responsive i {
@@ -134,22 +138,33 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 70%;
+  width: max-content;
   align-items: center;
 }
 
-.filters a:hover {
+.filters_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filters_items a {
+  width: fit-content;
+  height: fit-content;
+}
+.filters_items a:hover {
   border: 2px #0065fc solid;
   border-radius: 90px;
 }
-
 .filters_item {
   border: 1px #deebfe solid;
   border-radius: 90px;
-  height: max-content;
-  width: max-content;
+  height: fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: row;
+  margin-left: 15px;
 }
 
 .filters_item_icon {
@@ -164,11 +179,12 @@ form {
   margin: 10px;
 }
 
+/*infos*/
 .infos {
   align-items: center;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .infos_icon {
@@ -236,9 +252,14 @@ figure {
   flex-direction: column;
 }
 
+.main_hostings_figures a {
+  width: fit-content;
+  height: fit-content;
+}
+
 .main_hostings_figures a:hover,
 .popular_hostings_figures a:hover {
-  border: 2px #0065fc solid;
+  border: 5px #0065fc solid;
   border-radius: 15px;
 }
 
@@ -302,6 +323,10 @@ figure {
   justify-content: space-between;
 }
 
+.popular_hostings_head i {
+  margin-left: 20px;
+}
+
 .popular_hostings_figures {
   display: flex;
   flex-direction: column;
@@ -326,6 +351,11 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.popular_hostings_figures a {
+  width: fit-content;
+  height: fit-content;
 }
 
 .popular_hostings_figure img {
@@ -356,6 +386,18 @@ figure {
   width: 100%;
 }
 
+.activities_figures a,
+.activities_figures_cards a {
+  width: fit-content;
+  height: fit-content;
+}
+
+.activities_figures a:hover,
+.activities_figures_cards_a:hover {
+  border: 5px #0065fc solid;
+  border-radius: 15px;
+}
+
 .activities_figure,
 .activities_figures_cards {
   display: flex;
@@ -363,14 +405,14 @@ figure {
   height: 400px;
   text-align: left;
   justify-content: space-between;
+  width: 310px;
 }
 
 .activities_figure img {
-  object-fit: cover;
-  height: 370px;
+  height: 380px;
   width: 310px;
   border-radius: 15px 15px 0 0;
-  margin: auto;
+  margin: 0;
 }
 
 .activities_figures_card {
@@ -382,11 +424,10 @@ figure {
 }
 
 .activities_figures_card img {
-  object-fit: cover;
   height: 160px;
   width: 310px;
   border-radius: 15px 15px 0 0;
-  margin: auto;
+  margin: 0;
 }
 
 /*footer*/
@@ -413,8 +454,136 @@ footer {
   line-height: 25px;
 }
 
-/* medium screens*/
-@media all and (min-width: 768px) and (max-width: 992px) {
+/*media queries for tablets*/
+@media screen and (max-width: 1024px) {
+  header {
+    width: 85%;
+  }
+
+  .search_section {
+    width: 80%;
+  }
+
+  /*filters*/
+  .filters {
+    width: 75%;
+  }
+
+  /*hostings*/
+  .hostings {
+    width: 85%;
+    height: 950px;
+    flex-direction: column;
+  }
+
+  .main_hostings {
+    width: 95%;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .main_hostings_figures {
+    width: 95%;
+    height: 470px;
+    margin: 20px auto;
+  }
+
+  .main_hostings_figure {
+    width: 210px;
+    height: 200px;
+    padding: 4px;
+  }
+
+  .main_hostings_figcaption {
+    text-align: center;
+  }
+
+  .stars {
+    margin: auto;
+  }
+
+  .main_hostings_figure img,
+  .popular_hostings_figure img {
+    width: 200px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  /*popular hostings*/
+  .popular_hostings {
+    width: 95%;
+    height: 320px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .popular_hostings_head {
+    width: max-content;
+  }
+
+  .popular_hostings_figures {
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    height: 230px;
+  }
+
+  .popular_hostings_figure {
+    flex-direction: column;
+    width: 210px;
+    height: 210px;
+    text-align: left;
+  }
+
+  .popular_hostings_figcaption {
+    text-align: center;
+  }
+
+  /*activities*/
+  .activities {
+    width: 80%;
+    margin: 30px auto;
+    height: 400px;
+  }
+
+  .activities_figures {
+    width: 100%;
+    margin: 0 auto;
+    height: 320px;
+  }
+
+  .activities_figure,
+  .activities_figures_cards {
+    width: 160px;
+    height: 300px;
+  }
+
+  .activities_figure img {
+    width: 160px;
+    height: 240px;
+  }
+
+  .activities_figures_card {
+    width: 160px;
+    height: 140px;
+  }
+
+  .activities_figures_card img {
+    width: 160px;
+    height: 100px;
+  }
+
+  /*footer*/
+  footer {
+    width: 85%;
+    height: 750px;
+  }
+
+  .footer_items {
+    height: 700px;
+  }
+}
+
+/*max-width: 768px*/
+@media screen and (max-width: 768px) {
   /*header*/
   header {
     width: 90%;
@@ -445,7 +614,7 @@ footer {
   .main_hostings_figures {
     width: 95%;
     height: 470px;
-    margin: auto;
+    margin: 20px auto;
   }
 
   .main_hostings_figure {
@@ -468,11 +637,15 @@ footer {
     border-radius: 15px 15px 0 0;
   }
 
+  /*popular hostings*/
   .popular_hostings {
     width: 95%;
     height: 320px;
     flex-direction: column;
     margin: auto;
+  }
+  .popular_hostings_head {
+    width: max-content;
   }
 
   .popular_hostings_figures {
@@ -512,7 +685,7 @@ footer {
   }
 
   .activities_figure img {
-    width: 150px;
+    width: 160px;
     height: 240px;
   }
 
@@ -522,13 +695,18 @@ footer {
   }
 
   .activities_figures_card img {
-    width: 150px;
+    width: 160px;
     height: 100px;
   }
 
   /*footer*/
   footer {
     width: 95%;
+    height: 400px;
+  }
+
+  .footer_items {
+    height: 350px;
   }
 }
 
@@ -536,13 +714,35 @@ footer {
 @media screen and (max-width: 576px) {
   /*header*/
   header {
-    height: 100px;
-    width: 90%;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    display: flex;
+  }
+
+  .logo {
+    position: static;
+    margin: auto;
+  }
+
+  .menu {
+    margin: 0;
+    width: auto;
+  }
+
+  .menu li {
+    justify-content: center;
+    display: inline;
+    margin: auto;
+  }
+
+  .menu_login {
+    position: static;
   }
 
   /*search*/
   .search_section {
-    height: 600px;
+    height: 450px;
     width: 90%;
   }
 
@@ -561,13 +761,12 @@ footer {
   /*filters*/
   .filters {
     flex-direction: column;
-    width: 75%;
-    height: 200px;
+    width: 100%;
   }
 
-  .filter {
+  .filters_title {
+    margin-left: 15px;
   }
-
   /*hostings*/
   .hostings {
     flex-direction: column-reverse;
@@ -579,7 +778,7 @@ footer {
   .popular_hostings {
     flex-direction: column;
     width: 100%;
-    height: 750px;
+    height: 620px;
     border-radius: 0;
   }
 
@@ -592,17 +791,20 @@ footer {
     width: 100%;
     height: 500px;
     flex-direction: column;
+    margin: 10px auto;
   }
 
   .popular_hostings_figure {
     width: 90%;
     height: 150px;
     flex-direction: row;
-    margin: 10px auto 0 auto;
+    margin: 5px auto 0 auto;
   }
 
   .popular_hostings_figures a {
     margin: 10px auto 0 auto;
+    width: fit-content;
+    height: fit-content;
   }
 
   .popular_hostings_figure img {
@@ -617,6 +819,9 @@ footer {
     background-color: white;
   }
 
+  .main_hostings_title {
+    margin-left: 20px;
+  }
   .main_hostings_figures {
     width: 100%;
     height: 1500px;
@@ -678,6 +883,7 @@ footer {
   .activities_figures_card {
     height: 160px;
     margin: 0 auto 0 auto;
+    width: 100%;
   }
 
   .activities_figure img,
