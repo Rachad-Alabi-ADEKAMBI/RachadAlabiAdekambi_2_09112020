@@ -579,15 +579,8 @@ footer {
     height: 100px;
     width: 160px;
   }
-
-  footer {
-    height: 700px;
-  }
-
-  .footer_items {
-    height: 650px;
-  }
 }
+
 /*max-width: 768px*/
 @media screen and (max-width: 768px) {
   /*header*/
@@ -697,14 +690,6 @@ footer {
   .popular_hostings_figure img {
     border-radius: 15px 15px 0 0;
     height: 120px;
-  }
-
-  footer {
-    height: 700px;
-  }
-
-  .footer_items {
-    height: 650px;
   }
 }
 
