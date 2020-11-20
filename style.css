@@ -367,7 +367,6 @@ figure {
 
 .popular_hostings_figure img {
   border-radius: 20px 0 0 20px;
-  object-fit: cover;
   width: 130px;
 }
 
@@ -416,9 +415,9 @@ figure {
 
 .activities_figure img {
   height: 380px;
-  width: 310px;
   border-radius: 15px 15px 0 0;
   margin: 0;
+  width: 310px;
 }
 
 .activities_figures_card {
@@ -431,9 +430,9 @@ figure {
 
 .activities_figures_card img {
   height: 160px;
-  width: 310px;
   border-radius: 15px 15px 0 0;
   margin: 0;
+  width: 310px;
 }
 
 /*footer*/
@@ -505,6 +504,10 @@ footer {
     text-align: center;
   }
 
+  .stars {
+    margin: auto;
+  }
+
   .main_hostings_figure img,
   .popular_hostings_figure img {
     border-radius: 15px 15px 0 0;
@@ -539,7 +542,6 @@ footer {
   .popular_hostings_figure img {
     width: 200px;
   }
-
   .popular_hostings_figcaption {
     text-align: center;
   }
@@ -574,21 +576,18 @@ footer {
   }
 
   .activities_figures_card img {
-    width: 160px;
     height: 100px;
+    width: 160px;
   }
 
-  /*footer*/
   footer {
-    width: 85%;
-    height: 400px;
+    height: 700px;
   }
 
   .footer_items {
-    height: 350px;
+    height: 650px;
   }
 }
-
 /*max-width: 768px*/
 @media screen and (max-width: 768px) {
   /*header*/
@@ -669,7 +668,6 @@ footer {
   }
 
   .popular_hostings_figure img {
-    width: 200px;
     border-radius: 15px 15px 0 0;
   }
 
@@ -691,17 +689,9 @@ footer {
     height: 300px;
   }
 
-  .activities_figure img {
-    width: 160px;
-  }
-
   .activities_figures_card {
     width: 160px;
     height: 140px;
-  }
-
-  .activities_figures_card img {
-    width: 160px;
   }
 
   .popular_hostings_figure img {
@@ -709,14 +699,12 @@ footer {
     height: 120px;
   }
 
-  /*footer*/
   footer {
-    width: 85%;
-    height: 200px;
+    height: 700px;
   }
 
   .footer_items {
-    height: 150px;
+    height: 650px;
   }
 }
 
@@ -839,8 +827,8 @@ footer {
   }
 
   .popular_hostings_figure img {
-    width: 40%;
     border-radius: 15px 0 0 15px;
+    width: 130px;
   }
 
   /*main hostings*/
@@ -853,7 +841,6 @@ footer {
   .main_hostings_title {
     margin-left: 20px;
   }
-
   .main_hostings_figures {
     width: 100%;
     height: 1500px;
@@ -892,7 +879,8 @@ footer {
 
   .activities_figures a {
     margin: 5px auto 5px auto;
-    height: 160px;
+    height: fit-content;
+    width: fit-content;
   }
 
   .activities_figure {
@@ -909,6 +897,8 @@ footer {
 
   .activities_figures_cards a {
     margin: 0 auto 5px auto;
+    width: fit-content;
+    height: fit-content;
   }
 
   .activities_figures_card {
@@ -919,8 +909,8 @@ footer {
 
   .activities_figure img,
   .activities_figures_card img {
-    width: 100%;
     height: 130px;
+    width: 330px;
   }
 
   /*footer*/
