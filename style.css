@@ -367,7 +367,6 @@ figure {
 
 .popular_hostings_figure img {
   border-radius: 20px 0 0 20px;
-  width: 130px;
 }
 
 /*activities*/
@@ -417,7 +416,6 @@ figure {
   height: 380px;
   border-radius: 15px 15px 0 0;
   margin: 0;
-  width: 310px;
 }
 
 .activities_figures_card {
@@ -539,9 +537,6 @@ footer {
     height: 230px;
   }
 
-  .popular_hostings_figure img {
-    width: 200px;
-  }
   .popular_hostings_figcaption {
     text-align: center;
   }
@@ -578,6 +573,14 @@ footer {
   .activities_figures_card img {
     height: 100px;
     width: 160px;
+  }
+
+  footer {
+    height: 300px;
+  }
+
+  .footer_items {
+    height: 250px;
   }
 }
 
@@ -710,10 +713,24 @@ footer {
 
   .menu {
     flex-wrap: wrap-reverse;
+    float: right;
+    width: 100%;
+  }
+
+  .menu_responsive {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-align: center;
+  }
+
+  .menu_responsive li a {
+    width: 50%;
   }
 
   .menu li {
     align-self: baseline;
+    width: 50%;
   }
 
   .menu_link {
@@ -724,12 +741,9 @@ footer {
   }
 
   .menu_login {
-    margin-right: 0;
-  }
-
-  .menu_login a {
-    position: static;
-    margin-right: 0;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
   }
 
   /*search_section*/
@@ -911,5 +925,10 @@ footer {
     height: 350px;
     margin: auto;
     width: 80%;
+    line-height: 5px;
+  }
+
+  .footer_item {
+    margin-top: 10px;
   }
 }
