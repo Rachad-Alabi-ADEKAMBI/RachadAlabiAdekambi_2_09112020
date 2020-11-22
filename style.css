@@ -70,6 +70,10 @@ h2 {
   font-size: 1.3em;
 }
 
+p {
+  margin: auto;
+}
+
 h3 {
   font-size: 1.1em;
   margin: auto 10px;
@@ -78,10 +82,6 @@ h3 {
 h4 {
   font-size: 0.9em;
   margin: auto auto 20px 0;
-}
-
-p {
-  margin: auto 10px;
 }
 
 /*form*/
@@ -226,7 +226,7 @@ form input {
   height: 580px;
   margin: 20px auto auto 0;
   background-color: #f2f2f2;
-  width: 65%;
+  width: 992px;
   border-radius: 20px;
 }
 
@@ -265,8 +265,7 @@ figure {
   height: fit-content;
 }
 
-.main_hostings_figures a:hover,
-.popular_hostings_figures a:hover {
+.main_hostings_figures a:hover {
   border: 5px #0065fc solid;
   border-radius: 15px;
 }
@@ -317,14 +316,14 @@ figure {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 500px;
   background-color: #f2f2f2;
   margin-top: 20px;
 }
 
 .popular_hostings_head {
-  width: 300px;
-  margin: 20px auto 5px 50px;
+  width: 370px;
+  margin: 20px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -339,7 +338,7 @@ figure {
   flex-direction: column;
   justify-content: space-between;
   height: 470px;
-  width: 95%;
+  width: 400px;
   margin: 15px auto;
   align-items: center;
 }
@@ -347,7 +346,7 @@ figure {
 .popular_hostings_figure {
   display: flex;
   flex-direction: row;
-  width: 300px;
+  width: 370px;
   height: 130px;
   padding: 5px;
 }
@@ -358,13 +357,19 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 370px;
 }
 
 .popular_hostings_figures a {
-  width: fit-content;
+  width: 370px;
   height: fit-content;
+  margin: auto;
 }
 
+.popular_hostings_figures a:hover {
+  border: 5px #0065fc solid;
+  border-radius: 15px;
+}
 .popular_hostings_figure img {
   border-radius: 20px 0 0 20px;
 }
