@@ -775,7 +775,7 @@ footer {
 
   .menu_login {
     position: absolute;
-    top: 50px;
+    top: 45px;
     right: 15px;
   }
 
@@ -814,6 +814,10 @@ footer {
     width: 90%;
   }
 
+  .search_form_icon {
+    width: 50px;
+  }
+
   form {
     width: 100%;
   }
@@ -824,6 +828,7 @@ footer {
 
   .search_form_submit_responsive {
     display: inline-block;
+    width: 50px;
   }
 
   /*filters*/
