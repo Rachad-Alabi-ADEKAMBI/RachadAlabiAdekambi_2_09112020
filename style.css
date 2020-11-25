@@ -49,11 +49,6 @@ nav img {
   float: left;
 }
 
-.menu_link a:hover {
-  color: #0065fc;
-  border-bottom: 2px#DEEBFF solid;
-}
-
 ul li {
   list-style: none;
   text-decoration: none;
@@ -80,10 +75,6 @@ h2 {
   margin: 30px auto auto 50px;
 }
 
-p {
-  margin-left: 10px;
-}
-
 h3 {
   font-size: 1.1em;
   margin: auto 10px;
@@ -92,6 +83,10 @@ h3 {
 h4 {
   font-size: 0.9em;
   margin: auto auto 20px 0;
+}
+
+p {
+  margin-left: 10px;
 }
 
 /*form*/
@@ -137,7 +132,7 @@ form input {
 
 .search_form_submit_responsive {
   width: 50px;
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px;
   background-color: #0065fc;
   display: none;
   border: none;
@@ -174,12 +169,12 @@ form input {
 }
 
 .filters_items a:hover {
-  color: blue;
-  border-bottom: 1px blue solid;
+  color: #0065fc;
+  border-bottom: 1px #0065fc solid;
 }
 
 .filters_item {
-  border: 1px #deebfe solid;
+  border: 1px #f2f2f2 solid;
   border-radius: 90px;
   height: fit-content;
   width: fit-content;
@@ -445,7 +440,7 @@ figure {
 }
 
 .activities_figure img {
-  height: 380px;
+  height: 360px;
   border-radius: 15px 15px 0 0;
   margin: 0;
 }
@@ -460,14 +455,14 @@ figure {
 }
 
 .activities_figures_card img {
-  height: 160px;
+  height: 140px;
   border-radius: 15px 15px 0 0;
   margin: 0;
 }
 
 /*footer*/
 footer {
-  width: 90%;
+  width: 80%;
   height: 150px;
   background-color: #f2f2f2;
   align-items: center;
@@ -488,6 +483,10 @@ footer {
   flex: 1;
   text-align: left;
   line-height: 25px;
+}
+
+.footer_item h3 {
+  margin: auto;
 }
 
 /*media queries for 1024px */
@@ -583,7 +582,7 @@ footer {
   .popular_hostings_figure {
     flex-direction: column;
     width: 210px;
-    height: 230px;
+    height: 210px;
     text-align: center;
   }
 
@@ -641,13 +640,14 @@ footer {
   }
 }
 
-/*max-width: 768px*/
+/*media queries for 768px*/
 @media screen and (max-width: 768px) {
-  /*header*/
+  /*nav*/
   nav {
     width: 90%;
   }
 
+  /*header*/
   .header_section {
     width: 90%;
   }
@@ -655,10 +655,6 @@ footer {
   /*filters*/
   .filters {
     width: 100%;
-  }
-
-  .filters_items a {
-    margin-top: 10px;
   }
 
   /*hostings*/
@@ -691,7 +687,6 @@ footer {
   }
 
   .main_hostings_figure img {
-    width: 200px;
     border-radius: 15px 15px 0 0;
   }
 
@@ -716,12 +711,13 @@ footer {
   .popular_hostings_figure {
     flex-direction: column;
     width: 210px;
-    height: 230px;
+    height: 210px;
     text-align: left;
   }
 
   .popular_hostings_figure img {
     border-radius: 15px 15px 0 0;
+    height: 120px;
   }
 
   /*activities*/
@@ -747,11 +743,6 @@ footer {
     height: 140px;
   }
 
-  .popular_hostings_figure img {
-    border-radius: 15px 15px 0 0;
-    height: 120px;
-  }
-
   footer {
     width: 95%;
     height: 250px;
@@ -761,10 +752,8 @@ footer {
 /* small screens*/
 @media screen and (max-width: 576px) {
   /*nav*/
-  nav,
-  .navbar,
-  .navbar_link {
-    display: flex;
+  nav {
+    width: 100%;
   }
 
   nav img {
@@ -776,10 +765,12 @@ footer {
 
   .menu {
     align-items: center;
-    margin-top: 75px;
+    margin: 75px 0 0 0;
     padding: 0;
     width: 100%;
     height: 30px;
+    display: flex;
+    justify-content: center;
   }
 
   .menu_login {
@@ -793,14 +784,19 @@ footer {
     font-weight: bold;
   }
 
+  .menu li {
+    margin: auto 0 auto 0;
+  }
+
   .menu_link {
     border-bottom: 2px solid #f2f2f2;
     height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 50%;
-  }
-
-  .menu_link :hover {
-    border-bottom: 1px solid #0065fc;
+    margin: auto 0 auto 0;
   }
 
   .menu_link a:hover {
@@ -816,7 +812,6 @@ footer {
   .header_section {
     height: 500px;
     width: 90%;
-    margin-bottom: 0;
   }
 
   form {
@@ -835,14 +830,15 @@ footer {
   .filters {
     flex-direction: column;
     width: 100%;
-    text-align: left;
+    align-items: inherit;
   }
 
   .filters_items a {
     margin-top: 10px;
   }
+
   .filters_title {
-    margin-left: 10px;
+    margin: auto 10px;
   }
 
   /*infos*/
@@ -1039,9 +1035,5 @@ footer {
 
   .footer_item {
     margin-top: 10px;
-  }
-
-  footer h3 {
-    margin: auto;
   }
 }
