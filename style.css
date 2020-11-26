@@ -631,12 +631,12 @@ footer {
   }
 
   footer {
-    height: 250px;
+    height: 150px;
     width: 80%;
   }
 
   .footer_items {
-    height: 200px;
+    height: auto;
   }
 }
 
@@ -745,7 +745,7 @@ footer {
 
   footer {
     width: 95%;
-    height: 250px;
+    height: 150px;
   }
 }
 
