@@ -294,7 +294,7 @@ figure {
 }
 
 .star_icon {
-  font-size: 0.8 em;
+  font-size: 0.8em;
 }
 
 .star_icon[data-active="true"] {
@@ -412,7 +412,7 @@ figure {
 
 .activities_figures {
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -939,7 +939,7 @@ footer {
   .main_hostings_figures {
     width: 100%;
     height: 1500px;
-    flex-wrap: column;
+    flex-wrap: wrap;
     margin: 15px auto;
   }
 
