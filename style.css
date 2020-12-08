@@ -779,11 +779,6 @@ footer {
     right: 15px;
   }
 
-  .menu_login a {
-    color: #0065fc;
-    font-weight: bold;
-  }
-
   .menu li {
     margin: auto 0 auto 0;
   }
@@ -797,10 +792,6 @@ footer {
     display: flex;
     width: 50%;
     margin: auto 0 auto 0;
-  }
-
-  .menu_link a:hover {
-    color: #0065fc;
   }
 
   h1 {
