@@ -47,6 +47,9 @@ nav img {
   color: black;
 }
 
+.menu li a.active {
+  color: #0065fc;
+}
 nav img {
   margin-top: 15px;
   float: left;
