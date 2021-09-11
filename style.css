@@ -365,7 +365,7 @@ figure {
   display: flex;
   flex-direction: row;
   width: 300px;
-  height: 130px;
+  height: 160px;
   padding: 5px;
 }
 
@@ -374,7 +374,7 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 100%;
   text-align: left;
 }
 
@@ -498,8 +498,14 @@ footer {
   margin: auto;
 }
 
+/*media queries for 1280px */
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+ 
+
+}
+
 /*media queries for 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   nav {
     width: 80%;
   }
@@ -650,7 +656,7 @@ footer {
 }
 
 /*media queries for 768px*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   /*nav*/
   nav {
     width: 90%;
@@ -704,7 +710,7 @@ footer {
     width: 95%;
     height: 320px;
     flex-direction: column;
-    margin: auto;
+    margin: auto 50px auto auto;
   }
   .popular_hostings_head {
     width: max-content;
@@ -720,9 +726,11 @@ footer {
   .popular_hostings_figure {
     flex-direction: column;
     width: 210px;
-    height: 210px;
+    height: 230px;
     text-align: left;
   }
+
+
 
   .popular_hostings_figure img {
     border-radius: 15px 15px 0 0;
@@ -732,8 +740,8 @@ footer {
   /*activities*/
   .activities {
     width: 95%;
-    margin: 30px auto;
-    height: 350px;
+    margin: 30px auto 50px auto;
+    height: auto;
   }
 
   .activities_figures {
@@ -749,7 +757,12 @@ footer {
 
   .activities_figures_card {
     width: 160px;
-    height: 140px;
+    height: 120px;
+    margin: 5px auto ;
+  }
+
+  .activities_figures_card img{
+    height: 80px;
   }
 
   footer {
@@ -758,8 +771,9 @@ footer {
   }
 }
 
+
 /* small screens*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   /*nav*/
   nav {
     width: 100%;
@@ -883,7 +897,7 @@ footer {
 
   .popular_hostings_figure {
     width: 100%;
-    height: 130px;
+    height: 150px;
     flex-direction: row;
     margin: 5px auto 0 auto;
   }
@@ -895,6 +909,11 @@ footer {
 
   .popular_hostings_figcaption {
     text-align: left;
+  }
+
+  .popular_hostings_stars{
+    top: 20px;
+    text-overflow: hidden;
   }
 
   .popular_hostings_figure img {
